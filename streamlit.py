@@ -28,8 +28,8 @@ with tab1:
         import plotly.express as px
         fig = px.histogram(
                 astro2, 
-                x='Country',
-                y='Total Flights',
+                x='Total Flights',
+                y='Country',
                 nbins=10,
                 title='All Countries')
         st.plotly_chart(fig)
@@ -42,8 +42,8 @@ with tab2:
         st.metric(label= 'Akumulasi Perjalanan ke Angkasa', value='1294')  
     with col2:
         import plotly.graph_objects as go
-        labels = ['Canada','China','France','Germany', 'Italy', 'Japan', 'Russia', 'Soviet Union', 'United States']
-        values = [18, 14, 19, 15, 13, 21, 137, 136, 865]
+        labels = ['Japan', 'Russia', 'Soviet Union', 'United States']
+        values = [21, 137, 136, 865]
         fig2 = go.Figure(data=[go.Pie(labels=labels, values=values)])
         st.plotly_chart(fig2)
 
