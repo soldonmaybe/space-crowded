@@ -30,7 +30,7 @@ with tab1:
                 astro2, 
                 x='Total Flights',
                 y='Country',
-#                 nbins=10,
+                nbins=50,
                 title='All Countries')
         st.plotly_chart(fig)
 
